@@ -1,5 +1,5 @@
 {
-  "title": "Drive a cap screw into a threaded insert with a screwdriver: stand both up, hold the screw while the bit goes in, then steady the screwdriver while turning it",
+  "title": "Drive a cap screw into a threaded insert with a screwdriver, holding the screw, then the screwdriver, upright",
   "category": "Impact on jobs",
   "keywords": [
     "bimanual",
@@ -15,7 +15,7 @@
   "scoring": "Judged at the end, from the screw's and the screwdriver's poses. Gap: the height of the screw head's underside above the insert's top. The screw is standing in the insert when the gap is under 9 mm (its tip inside the insert), its axis is within 10 degrees of vertical and the centre of the head's underside is within 2 mm of the insert's axis. The bit is in the socket when its tip is at least 2 mm below the socket's top, within 1.5 mm of the screw's axis, with the two axes within 10 degrees. Score: 0.0 unless the screw is standing in the insert; 0.2 if it is but the bit is not in its socket, however far the screw is in (a screw turned in by its head, not with the screwdriver, scores no more); with the bit in the socket, 0.3 plus 0.7 times the share of the way driven, from a gap of 7.0 mm (the screw set in the insert's mouth) to 0.6 mm (seated). 1.0: seated, with a gap under 0.6 mm, the axis within 3 degrees of vertical and within 1 mm of the insert's axis, and the bit in the socket, held for 1 s; the trial then ends, otherwise it ends at the run limit.",
   "run_limit": "1,800 steps (90 s at 20 Hz)",
   "reset_notes": "Unscrew the screw and lay it and the screwdriver back where they started.",
-  "fidelity": "Rigid-body simulation (Isaac Sim 6.1, PhysX, 20 Hz control). The threads are real helical surfaces collided as signed distance fields, so the screw advances only as it turns: about 2.9 mm per clockwise turn of its 3 mm pitch, and it backs out one pitch per turn counter-clockwise. Simplified: the pitch is coarser than a real M12's (1.75 mm), so seating takes about 2.3 turns; thread friction is a dry steel-on-brass 0.3, and a screw left alone in the thread creeps round about 0.25 degrees a second; the insert is fixed to the table; the knurled head and the rubber handle have a grippy 1.2 friction. Cameras 1280 x 704 (Dream-1 sees 320 x 176).",
+  "fidelity": "Rigid-body simulation (Isaac Sim 6.1, PhysX, 20 Hz control). The threads are real helical surfaces collided as signed distance fields: the screw advances only as it turns, about 2.9 mm per turn of its 3 mm pitch. Simplified: the pitch is coarser than a real M12's (1.75 mm), so seating takes about 2.3 turns; thread friction 0.3; a screw left in the thread creeps about 0.25 degrees a second; the insert is fixed. Cameras 1280 x 704 (Dream-1 sees 320 x 176).",
   "scores": "Dream-1 run: 0.0; demo: 1.0",
   "media": "M-ZWTQ99"
 }
